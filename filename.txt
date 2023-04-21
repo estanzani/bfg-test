@@ -1,0 +1,497 @@
+    1  sudo dnf install firefox -y
+    2  sudo dnf makecache --refresh
+    3  sudo dnf groupinstall "Development Tools" -y
+    4  printf "[vscode]\nname=packages.microsoft.com\nbaseurl=https://packages.microsoft.com/yumrepos/vscode/\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc\nmetadata_expire=1h" | sudo tee -a /etc/yum.repos.d/vscode.repo
+    5   sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+    6  sudo dnf update -y
+    7  sudo dnf install code -y
+    8  man iconv
+    9  sudo dnf install iconv
+   10  man iconv
+   11  man man iconv
+   12  top
+   13  ls
+   14  pwd
+   15  ///
+   16  /// 
+   17  sudo dnf install tree
+   18  tree /
+   19  man wc
+   20  sudo dnf install bc
+   21  bc
+   22  man bc
+   23  bc
+   24  ls
+   25  ls -la
+   26  ls -l
+   27  bash
+   28  ls
+   29  ls -la
+   30  cd..
+   31  cd ..
+   32  ls
+   33  ls -l
+   34  pwd
+   35  /home/student/
+   36  echo
+   37  man echo
+   38  touch
+   39  pwd
+   40  ls -la
+   41  ls -la
+   42  mkdir testDirectory
+   43  cd testDirectory/
+   44  ls -la
+   45  touch file.txt
+   46  ls -la
+   47  touch supercazzola.txt
+   48  ls -la
+   49  touch file.txt
+   50  ls -la
+   51  man less
+   52  ls -la
+   53  group student
+   54  groups student
+   55  chmod o-r
+   56  chmod o-r testDirectory
+   57  ls la
+   58  ls -la
+   59  chmod 777 testDirectory/
+   60  ls -la
+   61  chmod 754 testDirectory/
+   62  ls -la
+   63  chmod 755 testDirectory/
+   64  ls -la
+   65  curl "https://standards-oui.ieee.org/" >oui.txt
+   66  less oui.txt 
+   67  iconfig | less
+   68  man ip
+   69  man ifconfig
+   70  man icongif
+   71  sudo dnf install net-tools
+   72  man ifconfig
+   73  iconfig | less
+   74  ifconfig | less
+   75  man ifconfig
+   76  ifconfig | less
+   77  ifconfig | grep ether p
+   78  ifconfig | grep ether cat
+   79  ifconfig | grep ether
+   80  ifconfig | grep ether > address.txt
+   81  ls -la
+   82  cat address.txt 
+   83  less address.txt 
+   84  cat address.txt 
+   85  echo address.txt 
+   86  ifconfig | grep ether [1-9]*
+   87  ifconfig | grep ether
+   88  ifconfig | grep ether | grep [1-9]*
+   89  ifconfig | grep ether | grep **:**:**:**:**:**
+   90  ifconfig | grep ether | grep **:**:**:**:**:*
+   91  ifconfig | grep ether | grep **:**:**:**:**:**
+   92  ifconfig | grep ether | grep **:**:**:**:**:** | cat
+   93  ifconfig | grep ether | grep **:**:**:**:**:** | echo
+   94  ifconfig | grep ether \Q
+   95  ifconfig | grep ether
+   96  ifconfig | grep ether | find 00
+   97  ifconfig | grep ether\s 
+   98  ifconfig | grep ether\s | cat
+   99  ifconfig | grep ether
+  100  ifconfig | grep ether\s
+  101  ifconfig | grep ether 00
+  102  ifconfig | grep ether
+  103  ifconfig | grep ethe
+  104  ifconfig | grep ether | cat grep 00
+  105  ifconfig | grep ether | cat 
+  106  ifconfig | grep ether | cat grep ether
+  107  man grep
+  108  ifconfig | grep ether -o
+  109  ifconfig | grep **:**:**:**:** -o
+  110  ifconfig | grep
+  111  ifconfig | grep ether
+  112  ifconfig | grep ---\2 ether
+  113  ifconfig | grep --\2 ether
+  114  ifconfig | grep ether
+  115  ifconfig | grep [0-9]*:[a-z0-9]*
+  116  ifconfig | grep ether | grep [0-9]*:[a-z0-9]*
+  117  ifconfig | grep ether | grep [0-9]*:[a-z0-9]* -o
+  118  ifconfig | grep ether | grep [0-9]*:[a-z0-9]*:[a-z0-9] -o
+  119  ifconfig | grep ether | grep [0-9]*:[a-z0-9]*:[a-z0-9]:[a-z0-9] -o
+  120  ifconfig | grep ether | grep [0-9]*:[a-z0-9]*:[a-z0-9]*:[a-z0-9]* -o
+  121  ifconfig | grep ether | grep [0-9]*:[a-z0-9]*:[a-z0-9]*:[a-z0-9]*:[a-z0-9] -o
+  122  ifconfig | grep ether | grep [0-9]*:[a-z0-9]*:[a-z0-9]*:[a-z0-9]*:[a-z0-9]* -o
+  123  ifconfig | grep ether | grep  -o
+  124  ifconfig | grep ether | grep -o [0-9]*:[a-z0-9]*:[a-z0-9]*:[a-z0-9]*:[a-z0-9]*
+  125  ifconfig | grep ether | grep ..:..:..:..:.. -o
+  126  ifconfig | grep ether | grep (..:)* -o
+  127  ifconfig | grep ether | grep ..:..:..:..:.. -o
+  128  ifconfig | grep ether | grep ..:..:..:..:..:.. -o
+  129  ifconfig | grep ether | grep "\s[a-f0-9:] -o 
+  130  q
+  131  ifconfig | grep ether | grep "\s[a-f0-9:]
+  132  ifconfig | grep ether | grep  
+  133  ifconfig | grep ether | grep  ..
+  134  ifconfig | grep ether | grep "\s[a-f0-9:]"
+  135  ifconfig | grep ether | grep "\s[a-f0-9:]\{17\} -o 
+  136  q
+  137  ifconfig | grep ether | grep "\s[abctdef0-9:]\{17\} -o 
+  138  ifconfig | grep ether | grep "\s[abctdef0-9:]\{17\}" -o 
+  139  ifconfig | grep ether | grep "\s[..:]\{17\}" -o 
+  140  ifconfig | grep ether | grep "[..:]\{17\}" -o 
+  141  ifconfig | grep ether | grep "[a-z0-9:]\{17\}" -o 
+  142  ifconfig | grep ether | grep ..:..:..:..:..:.. -o
+  143  ifconfig | grep ether | grep "[a-z0-9:]\{3\}" -o 
+  144  ifconfig | grep ether | grep "[a-z0-9:]\{3\}*" -o 
+  145  ifconfig | grep ether | grep "[a-g0-9:]\{3\}*" -o 
+  146  ifconfig | grep ether | grep "[a-g0-9]\{2\}*" -o 
+  147  ifconfig | grep ether | grep [a-g0-9]\{2\}* -o 
+  148  ifconfig | grep ether | grep "[a-g0-9]\{2\}:" -o 
+  149  ifconfig | grep ether | grep "[a-f0-9A-F]\{2\}:" -o 
+  150  ifconfig | grep ether | grep "[a-f0-9A-F](2:" -o 
+  151  ifconfig | grep ether | grep "[a-f0-9A-F]\{2\}:" -o 
+  152  ifconfig | grep ether | grep "[a-f0-9A-F]\{2\}[:\s]" -o 
+  153  ifconfig | grep ether | grep "[a-f0-9A-F]\{2\}[:-]" -o 
+  154  ifconfig | grep ether | grep "[a-f0-9A-F]\{2\}[:-]\{5\}" -o 
+  155  ifconfig | grep ether | grep "[a-f0-9A-F]\{2\}[:]\{5\}" -o 
+  156  ifconfig | grep ether | grep "][a-f0-9A-F]\{2\}[:]]\{5\}" -o 
+  157  ifconfig | grep ether | grep "[[a-f0-9A-F]\{2\}[:]]\{5\}" -o 
+  158  ifconfig | grep ether | grep "[[a-f0-9A-F]\{2\}[:\s]]\{5\}" -o 
+  159  ifconfig | grep ether | grep "[[a-f0-9A-F]\{2\}[\s:]]\{5\}" -o 
+  160  ifconfig | grep ether | grep "[[a-f0-9A-F]\{2\}[:]]\{4\}" -o 
+  161  ifconfig | grep ether | grep "[[a-f0-9A-F]\{2\}[:-]]\{4\}" -o 
+  162  ifconfig | grep ether | grep "[[a-f0-9A-F]\{2\}[:-]]\{4\}" -o 
+  163  ifconfig | grep ether | grep "[[a-f0-9A-F]\{2\}[:-]]" -o 
+  164  ifconfig | grep ether | grep "[[a-f0-9A-F]\{2\}" -o 
+  165  ifconfig | grep ether | grep "[[a-f0-9A-F]\{2\}:" -o 
+  166  ifconfig | grep ether | grep "[[a-f0-9A-F]\{2\}:]{\5\}" -o 
+  167  ifconfig | grep ether | grep "[[a-f0-9A-F]\{2\}:]{\4\}" -o 
+  168  ifconfig | grep ether | grep "[[a-f0-9A-F]\{2\}:]" -o 
+  169  ifconfig | grep ether | grep "[[a-f0-9A-F]\{2\}:" -o 
+  170  ifconfig | grep ether | grep "[a-f0-9A-F]\{2\}:" -o 
+  171  ifconfig | grep ether | grep "[a-f0-9A-F]\{2\}:\{4\}" -o 
+  172  ifconfig | grep ether | grep "[a-f0-9A-F]\{2\}:\{5\}" -o 
+  173  ifconfig | grep ether | grep "[[a-f0-9A-F]\{2\}:]\{5\}" -o 
+  174  ifconfig | grep ether | grep "[[a-f0-9A-F]\{2\}[:]\{5\}" -o 
+  175  ifconfig | grep ether | grep "[a-f0-9A-F]\{2\}(:-)\{5\}" -o 
+  176  ifconfig | grep ether | grep "[[a-f0-9A-F]\{2\}[:-]]\{5\}" -o 
+  177  ifconfig | grep ether | grep "[[a-f0-9A-F]\{2\}[:-]]" -o 
+  178  ifconfig | grep ether | grep "[[a-f0-9A-F]\{2\}" -o 
+  179  ifconfig | grep ether | grep "[[a-f0-9A-F]\{2\}[:]" -o 
+  180  ifconfig | grep ether | grep "[[a-f0-9A-F]\{2\}[:-]" -o 
+  181  ifconfig | grep ether | grep "[[a-f0-9A-F]\{2\}[:\s]" -o 
+  182  ifconfig | grep ether | grep "\([a-f0-9A-F]\{2\}[:\s]\)" -o 
+  183  ifconfig | grep ether | grep "\([a-f0-9A-F]\{2\}[:-]\)" -o 
+  184  ifconfig | grep ether | grep "\([a-f0-9A-F]\{2\}[:-]\)\{5\}" -o 
+  185  ifconfig | grep ether | grep "\([a-f0-9A-F]\{2\}[:-]\)\{5\}\([a-fA-F0-9]\)" -o 
+  186  ifconfig | grep ether | grep "\([a-f0-9A-F]\{2\}[:-]\)\{5\}\([a-fA-F0-9]\{2\}\)" -o 
+  187  ifconfig | grep ether | grep ..:..:..:..:..:.. -o
+  188  ifconfig | grep ether | grep ..[:-]..[:-]..[:-]..[:-]..[:-].. -o
+  189  ifconfig | grep ..[:-]..[:-]..[:-]..[:-]..[:-].. -o
+  190  ifconfig | grep ether | grep \([a-f0-9A-F]\{2\}[:-]\)\{5\}\([a-fA-F0-9]\{2\}\) -o 
+  191  ifconfig | grep ether | grep "\([a-f0-9A-F]\{2\}[:-?]\)\{5\}" -o 
+  192  ifconfig | grep ether | grep "\([a-f0-9A-F]\{2\}[:-?]\)\{6\}" -o 
+  193  ifconfig | grep ether | grep "\([a-f0-9A-F]\{2\}[:-]\)\{6\}" -o 
+  194  ifconfig | grep ether | grep "\([a-f0-9A-F]\{2\}[:-?]\)\{6\}" -o 
+  195  ifconfig | grep ether | grep "\([a-f0-9A-F]\{2\}[:-?]\)\{5\}" -o 
+  196  ifconfig | grep ether | grep "\([a-f0-9A-F]\{2\}[:-]\)\{5\}" -o 
+  197  ifconfig | grep ether | grep "\([a-f0-9A-F]\{2\}[:-?]\)\{5\}" -o 
+  198  ifconfig | grep ether | grep "\([a-f0-9A-F]\{2\}[:-?]\)\{6\}" -o 
+  199  ifconfig | grep ether | grep "\([a-f0-9A-F]\{2\}[:?]\)\{6\}" -o 
+  200  ifconfig | grep ether | grep "\([a-f0-9A-F]\{2\}[:?]\)\{5\}" -o 
+  201  ifconfig | grep ether | grep "\([a-f0-9A-F]\{2\}[:-?]\)\{5\}" -o 
+  202  ifconfig | grep ether | grep "\([a-f0-9A-F]\{2\}[:-\S]\)\{5\}" -o 
+  203  ifconfig | grep ether | grep "\([a-f0-9A-F]\{2\}[:-\S]\)\{6\}" -o 
+  204  ifconfig | grep ether | grep "\([a-f0-9A-F]\{2\}[:-\S]\)\{5\}" -o 
+  205  ifconfig | grep ether | grep "\([a-f0-9A-F]\{2\}[:-*]\)\{6\}" -o 
+  206  ifconfig | grep ether | grep "\([a-f0-9A-F]\{2\}[:-*]\)\{5\}" -o 
+  207  ifconfig | grep ether | grep "\([a-f0-9A-F]\{2\}[:?]\)\{6\}" -o 
+  208  ifconfig | grep ether | grep "\([a-f0-9A-F]\{2\}[:?]\)\{5\}" -o 
+  209  ifconfig | grep ether | grep "\([a-f0-9A-F]\{2\}[:-?]\)\{5\}" -o 
+  210  ifconfig | grep ether | grep "\([a-f0-9A-F]\{2\}[:?-]\)\{5\}" -o 
+  211  ifconfig | grep ether | grep "\([a-f0-9A-F]\{2\}[:?-]\)\{6\}" -o 
+  212  ifconfig | grep ether | grep "\([a-f0-9A-F]\{2\}[:?-]\)\{7\}" -o 
+  213  ifconfig | grep ether | grep "\([a-f0-9A-F]\{2\}[:?-]\)\{5\}" -o 
+  214  ifconfig | grep ether | grep "\([a-f0-9A-F]\{2\}[:?]\)\{5\}" -o 
+  215  ifconfig | grep ether | grep "\([a-f0-9A-F]\{2\}[:?]\)\{6\}" -o 
+  216  ifconfig | grep ether | grep "[a-f0-9A-F]\{2\}[:?]\{6\}" -o 
+  217  ifconfig | grep ether | grep "\([a-f0-9A-F]\{2\}[:?]\)\{6\}" -o 
+  218  history
+  219  history | grep curl
+  220  ls -la
+  221  head oui.txt 
+  222  less oui.txt 
+  223  50 oui.txt 
+  224  grep oui.txt mac
+  225  ougrep mac
+  226  oui.txt | grep hex
+  227  cat oui.txt | grep hex
+  228  cat oui.txt | grep mac
+  229  cat oui.txt | grep ether
+  230  ifconfig | grep ether | grep \([a-f0-9A-F]\{2\}[:-]\)\{5\}\([a-fA-F0-9]\{2\}\) -o 
+  231  ifconfig | grep ether | grep "\([a-f0-9A-F]\{2\}[:-*]\)\{5\}" -o 
+  232  ifconfig | grep ether | grep "\([a-f0-9A-F]\{2\}[:?-]\)\{5\}" -o 
+  233  ifconfig | grep ether | grep "\([a-f0-9A-F]\{2\}[:?-]\)\{2\}" -o 
+  234  ifconfig | grep ether | grep "\([a-f0-9A-F]\{2\}[:?-]\)\{3\}\([a-fA-F0-9]\)\" -o 
+  235  ifconfig | grep ether | grep \([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\) -o 
+  236  ifconfig | grep ether | grep \([a-f0-9A-F]\{2\}[:-]\)\{3\}\([a-fA-F0-9]\{2\}\) -o 
+  237  ifconfig | grep ether | grep -o "\([a-f0-9A-F]\{2\}[:-]\)\{3\}\([a-fA-F0-9]\{2\}\)" 
+  238  ifconfig | grep ether | grep -o "\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)" 
+  239  ifconfig | grep -o "\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)" 
+  240  man grep
+  241  ifconfig | grep -o "\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)" q
+  242  ifconfig | grep ether | grep -o "\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)" q
+  243  ifconfig | grep ether | grep -oq "\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)" 
+  244  man grep
+  245  ifconfig | grep ether | grep -o "\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)" n
+  246  ifconfig | grep ether | grep -on "\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)"
+  247  ifconfig | grep ether | grep -o "\(^[a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)"
+  248  ifconfig | grep ether | grep -o "\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)"
+  249  ifconfig | grep ether | grep -o "\<\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)"
+  250  ifconfig | grep ether | grep -o "\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)"
+  251  ifconfig | grep ether | grep -o "\<\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)" 
+  252  ifconfig | grep ether | grep -o "\A\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)" 
+  253  ifconfig | grep ether | grep -o "\d\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)" 
+  254  ifconfig | grep ether | grep -o "\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)" 
+  255  ifconfig | grep ether | grep -o \d
+  256  ifconfig | grep ether | grep -o \D
+  257  ifconfig | grep ether | grep -o \A
+  258  ifconfig | grep ether | grep -o \a
+  259  ifconfig | grep ether | grep -o "\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)" 
+  260  man grep
+  261  ifconfig | grep ether | grep -o "\s\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)" 
+  262  ifconfig | grep ether | grep -o "\([a-f0-9A-F]\{2\}[:-]\)\{5\}\([a-fA-F0-9]\{2\}\)" | "\<\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)"
+  263  ifconfig | grep ether | grep -o "\([a-f0-9A-F]\{2\}[:-]\)\{5\}\([a-fA-F0-9]\{2\}\)" | grep "\<\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)"
+  264  ifconfig | grep ether | grep -o "\([a-f0-9A-F]\{2\}[:-]\)\{5\}\([a-fA-F0-9]\{2\}\)" | grep -o "\<\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)"
+  265  ifconfig | grep ether | grep -o "\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)" | head -1
+  266  ifconfig | grep ether | grep -o "\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)" | cat head -1 
+  267  man xargs
+  268  ifconfig | grep ether | grep -o "\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)" | head -1 | sed "/s/\:/\-/g"
+  269  ifconfig | grep ether | grep -o "\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)" | head -1 | sed "s/\:/\-/g"
+  270  cat -50 oui.txt 
+  271  echo -50 oui.txt 
+  272  head -50 oui.txt 
+  273  ifconfig | grep ether | grep -o "\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)" | head -1 | sed "s/\:/\-/g"
+  274  ifconfig | grep ether | grep -o "\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)" | head -1 | sed "s/\:/\-/g" | grep -i xargs oui.txt 
+  275  ifconfig | grep ether | grep -o "\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)" | head -1 | sed "s/\:/\-/g" | grep xargs oui.txt 
+  276  grep "00-15" oui.txt 
+  277  grep -i "00-15-ed" oui.txt 
+  278  ifconfig | grep ether | grep -o "\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)" | head -1 | sed "s/\:/\-/g" | grep -i xargs oui.txt 
+  279  ifconfig | grep ether | grep -o "\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)" | head -1 | sed "s/\:/\-/g"
+  280  ifconfig | grep ether | grep -o "\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)" | head -1 | sed "s/\:/\-/g" | grep -i oui.txt 
+  281  ifconfig | grep ether | grep -o "\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)" | head -1 | sed "s/\:/\-/g" | xargs | grep -i oui.txt 
+  282  ifconfig | grep ether | grep -o "\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)" | head -1 | sed "s/\:/\-/g" | xargs | grep oui.txt 
+  283  ifconfig | grep ether | grep -o "\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)" | head -1 | sed "s/\:/\-/g" | xargs | grep -i oui.txt 
+  284  ifconfig | grep ether | grep -o "\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)" | head -1 | sed "s/\:/\-/g" | xargs | grep -i -a oui.txt 
+  285  ifconfig | grep ether | grep -o "\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)" | head -1 | sed "s/\:/\-/g" | grep -i xargs -a oui.txt 
+  286  ifconfig | grep ether | grep -o "\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)" | head -1 | sed "s/\:/\-/g" | grep -i | xargs -a oui.txt 
+  287  ifconfig | grep ether | grep -o "\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)" | head -1 | sed "s/\:/\-/g" | xargs grep -i oui.txt 
+  288  ifconfig | grep ether | grep -o "\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)" | head -1 | sed "s/\:/\-/g" | xargs | grep -i oui.txt 
+  289  ifconfig | grep ether | grep -o "\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)" | head -1 | sed "s/\:/\-/g" | xargs 
+  290  ifconfig | grep ether | grep -o "\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)" | head -1 | sed "s/\:/\-/g" | xargs o
+  291   
+  292  ifconfig | grep ether | grep -o "\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)" | head -1 | sed "s/\:/\-/g" | xargs -I{} grep -i {} oui.txt 
+  293  ifconfig | grep ether | grep -o "\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)" | head -1 | sed "s/\:/\-/g" | xargs -I grep -i oui.txt 
+  294  ifconfig | grep ether | grep -o "\([a-f0-9A-F]\{2\}[:-]\)\{2\}\([a-fA-F0-9]\{2\}\)" | head -1 | sed "s/\:/\-/g" | xargs -I grep -i {} oui.txt 
+  295  history 
+  296  history > history.txt
+  297  ls -la
+  298  head history.txt 
+  299  man tar
+  300  ls -la
+  301  tar -cvzf compress.tgz history.txt 
+  302  tar -cvzf compress.tgz history
+  303  tar -cvf compress.tgz history
+  304  tar -cvzf compress.tgz history
+  305  zargs --help
+  306  xargs --help
+  307  tar //help
+  308  tar --help
+  309  ls -la
+  310  tar -cvzf compressdir.tgz testDirectory
+  311  ls -la
+  312  tar -czf compressdir2.tgz testDirectory
+  313  ls -la
+  314  man unzip
+  315  unzip //help
+  316  unzip --help
+  317  strip --help
+  318  man mount
+  319  sudo dnf install sshfs
+  320  sudo dnf install fuse
+  321  fuse --help
+  322  man fuse
+  323  sshfs --help
+  324  ssh --help
+  325  mount --help
+  326  sudo dnf install epel-release
+  327  sudo dnf install fuse-sshfs
+  328  sudo dnf update
+  329  sudo dnf install epel-release
+  330  sudo dnf config-manager --set-enabled crb
+  331  sudo dnf install R
+  332  R --help
+  333  man R
+  334  R --version
+  335  man R
+  336  R
+  337  sudo dnf install git
+  338  git --version
+  339  ls /la
+  340  ls -la
+  341  pwd
+  342  mkdir proj_dir1
+  343  ls -la
+  344  cd proj_dir1/
+  345  git init
+  346  ls -la
+  347  man git
+  348  git config --local user.name "Elisabetta Stanzani"
+  349  git config --local user.email "stanzani.elisabetta@gmail.com"
+  350  cat.git/config
+  351  cat .git/config
+  352  git config --local user.name "estanzani"
+  353  cat .git/config
+  354  touch README.md
+  355  git add README.md 
+  356  cat .git/config
+  357  ls -la
+  358  git status
+  359  git commit -m "first commit"
+  360  touch pippo
+  361  echo "hello" > pluto
+  362  echo "worls" > prova
+  363  ls -la
+  364  git status
+  365  git add pippo
+  366  git status
+  367  git restore --staged pippo
+  368  git status
+  369  echo "modifica" > README.md 
+  370  git status
+  371  git diff
+  372  git add README.md 
+  373  git status
+  374  git diff
+  375  git diff --cached
+  376  vi README.md 
+  377  git status
+  378  ls la
+  379  ls /la
+  380  ls ùla
+  381  ls -la
+  382  pwd
+  383  cd proj_dir1/
+  384  ls -la
+  385  cat .git/config
+  386  git remote add origin git@github.com:estanzani/bfg-test.git
+  387  git branch -M main
+  388  git push -u origin main
+  389  git remote add origin git@github.com:estanzani/bfg-test.git
+  390  cat .git/config
+  391  ls -la
+  392  git push -u origin main
+  393  ssh-key
+  394  ssh-keygen
+  395  cat /home/student/.ssh/id_rsa.pub 
+  396  git push -u origin main
+  397  git branch
+  398  git branch my_branch
+  399  git branch
+  400  cd ..
+  401  ls /la
+  402  ls -la
+  403  bash /mnt/c/Users/student/Downloads/Anaconda3-2023.03-Linux-x86_64.sh 
+  404  conda init
+  405  module load anaconda3/
+  406  conda config --set auto_activate_base true
+  407  eval "$(/home/student/anaconda3/bin/conda shell.YOUR_SHELL_NAME hook)"
+  408  bash /mnt/c/Users/student/Downloads/Anaconda3-2023.03-Linux-x86_64.sh 
+  409  bash /mnt/c/Users/student/Downloads/Anaconda3-2023.03-Linux-x86_64.sh -u
+  410  module load anaconda3/
+  411  eval "$(/home/student/anaconda3/bin/conda shell.YOUR_SHELL_NAME hook)"
+  412  printf "$SHELL"
+  413  cd 
+  414  ls -la
+  415  ls anaconda3/
+  416  module load anaconda3/
+  417  bash
+  418  ls -la
+  419  ls anaconda3/
+  420  anaconda3/bin/conda init
+  421  conda list
+  422  conda create --name snowflakes
+  423  ls anaconda3/envs/snowflakes/
+  424  conda activate snowflakes
+  425  conda install biopython
+  426  ls anaconda3/envs/snowflakes/
+  427  conda search beautifulsoup
+  428  conda list
+  429  conda list --explicit
+  430  conda list --explicit > conda_requirement.txt
+  431  conda deactivate
+  432  conda create --name snowflake --file conda_requirement.txt 
+  433  conda env list
+  434  conda activate snowflake
+  435  conda list
+  436  conda deactivate
+  437  conda create --jupyter --channel conda-forge
+  438  conda create --name jupyter 
+  439  conda env list
+  440  conda activate jupiter
+  441  conda activate jupyter
+  442  conda install notebook --channel conda forge
+  443  conda install notebook --channel conda-forge
+  444  conda list
+  445  jupyter notebook
+  446  ls
+  447  cat test_jupyter.ipynb 
+  448  tail test_jupyter.ipynb 
+  449  conda deactivate
+  450  conda create --name numpy112
+  451  conda activate numpy112
+  452  python
+  453  conda install python
+  454  python
+  455  conda install numpy=1.12.1
+  456  conda install ipykernel
+  457  python -m ipykernel install --user --name=numpy-1-12-1
+  458  which python
+  459  conda deactivate
+  460  conda activate jupyter
+  461  jupyter notebook
+  462  Tree /
+  463  tree /
+  464  whereis python3
+  465  ./test
+  466  cd 01-testProgram
+  467  ./test
+  468  ls -la
+  469  whereis python3
+  470  chmod +x test
+  471  pwd
+  472  cd programming-course/01-testProgram/
+  473  chmod +x test
+  474  ./test
+  475  ./test
+  476  cd cd programming-course/01-testProgram/
+  477  ./test
+  478  cd programming-course/01-testProgram
+  479  ./test
+  480  cd..
+  481  cd ../02-hashTables/
+  482  ./hash
+  483  ls
+  484  ./hashTables
+  485  ls -la
+  486  chmod 774 hashTable
+  487  chmod 774 hashTables
+  488  ls -la
+  489  ./hashTables 
+  490  tree /
+  491  fg
+  492  history
+  493  conda activate numpy112
+  494  python
+  495  history
+  496  history | python
+  497  history > filename.txt
